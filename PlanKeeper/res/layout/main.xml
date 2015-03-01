@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/l"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:id="@+id/texttable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1,3" >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:text="@string/main_layout_time"
+                android:textSize="18dp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/timetext"
+                android:textSize="18dp" >
+            </TextView>
+
+        </TableRow>
+       
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:text="@string/main_layout_meansOfTransportation"
+                android:textSize="18dp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/meansoftransitionstext"
+                android:textSize="18dp" >
+            </TextView>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_marginRight="5pt"
+                android:text="@string/main_layout_speed"
+                android:textSize="18dp" >
+
+            </TextView>
+
+            <SeekBar
+                android:id="@+id/speedseek"
+                android:layout_width="fill_parent"
+                android:layout_marginRight="12pt"
+                android:enabled="true"
+                android:max="100"
+                android:progress="0" />
+
+        </TableRow>
+    </TableLayout>
+
+    <com.google.android.maps.MapView
+        android:id="@+id/myMap"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:apiKey="0uKcfHm0JTxE06FDRlDqnLlcembfmlLx5lRcSYw"
+        android:clickable="true"
+        android:enabled="true" />
+
+</LinearLayout>
+<!-- for mykeystore             -->
+<!-- for debugstore   android:apiKey="0uKcfHm0JTxExuQY7e5M14Bv7p2CJoDTnixnn1g"          -->

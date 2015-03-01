@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Scenario>
+	<Application>
+		<Application_Name>EventNotification</Application_Name>
+		<Package>jp.ac.ritsumei.cs.ubi.sacchin.EventNotification</Package>
+	</Application>
+	<SensorInterval>
+		<Location>1</Location>
+		<WiFi>3</WiFi>
+		<Battery>On</Battery>
+		<Accelerometer>Game</Accelerometer>
+	</SensorInterval>
+</Scenario>

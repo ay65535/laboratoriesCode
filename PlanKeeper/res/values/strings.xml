@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PlanViewer</string>
+    <string name="main_layout_time">現在時間</string>
+    <string name="main_layout_meansOfTransportation">移動手段</string>
+    <string name="main_layout_speed">シミュレーション速度</string>
+    <string name="main_layout_arrive">Arrive at</string>
+    <string name="main_layout_detect">Detect</string>
+    <string name="setting_layout_devid">devid</string>
+    <string name="setting_layout_interval">interval</string>
+</resources>
