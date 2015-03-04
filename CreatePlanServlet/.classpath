@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="var" path="TOMCAT_HOME/lib/servlet-api.jar"/>
+	<classpathentry kind="var" path="TOMCAT_HOME/lib/jasper.jar"/>
+	<classpathentry kind="var" path="TOMCAT_HOME/lib/jsp-api.jar"/>
+	<classpathentry kind="var" path="TOMCAT_HOME/lib/el-api.jar"/>
+	<classpathentry kind="var" path="TOMCAT_HOME/lib/annotations-api.jar"/>
+	<classpathentry kind="src" path="WEB-INF/src"/>
+	<classpathentry kind="src" output="work" path="work"/>
+	<classpathentry exported="true" kind="lib" path="WEB-INF/lib/mysql-connector-java-5.1.21.jar"/>
+	<classpathentry exported="true" kind="lib" path="WEB-INF/lib/json-20090211.jar"/>
+	<classpathentry exported="true" kind="lib" path="WEB-INF/lib/httpclient-4.2.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="WEB-INF/lib/httpcore-4.2.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="WEB-INF/lib/commons-logging-1.1.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="WEB-INF/lib/dropInSiteMaker.jar"/>
+	<classpathentry exported="true" kind="lib" path="WEB-INF/lib/gson-2.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="WEB-INF/lib/ubilab-utils-0.3.3.jar"/>
+	<classpathentry kind="output" path="WEB-INF/classes"/>
+</classpath>
