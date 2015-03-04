@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="jp.ac.ritsumei.cs.ubi.zukky.BRM.kubiwa.KubiwaUser" table="user">
+	
+		<id name="id" type="int">
+			<column name="userid" sql-type="int" not-null="true" />
+		</id>
+		
+		<property name="uname">
+			<column name="uname" sql-type="string" />
+		</property>
+		<property name="password">
+			<column name="passwd" sql-type="string" />
+		</property>
+		<property name="address">
+			<column name="email" sql-type="string" />
+		</property>
+	</class>
+</hibernate-mapping>

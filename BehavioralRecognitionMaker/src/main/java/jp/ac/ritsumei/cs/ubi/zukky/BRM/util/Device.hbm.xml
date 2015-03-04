@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="jp.ac.ritsumei.cs.ubi.zukky.BRM.kubiwa.Device" table="device">
+	
+		<id name="devId" type="int">
+			<column name="devid" sql-type="int" not-null="true" />
+		</id>
+		
+		<property name="userid">
+			<column name="userid" sql-type="int" />
+		</property>
+		<property name="devTypeId">
+			<column name="devtypeid" sql-type="int" />
+		</property>
+		<property name="devName">
+			<column name="devname" sql-type="string" />
+		</property>
+		<property name="picture">
+			<column name="picture" sql-type="string" />
+		</property>
+		<property name="color">
+			<column name="color" sql-type="string" />
+		</property>
+		<property name="active">
+			<column name="active" sql-type="int"/>
+		</property>
+		<property name="bthName">
+			<column name="bthname" sql-type="string" />
+		</property>
+		<property name="bthAddr">
+			<column name="bthaddr" sql-type="string" />
+		</property>
+	</class>
+</hibernate-mapping>

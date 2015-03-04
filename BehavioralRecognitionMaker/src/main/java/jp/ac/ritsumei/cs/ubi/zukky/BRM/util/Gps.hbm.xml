@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="jp.ac.ritsumei.cs.ubi.zukky.BRM.kubiwa.Gps" table="gps">
+	
+		<!-- 
+		name: 自分で作成したクラスに対応するフィールド名
+		column: データベースのカラム名
+		 -->
+		
+		<composite-id>
+			<key-property name="time"
+                    column="time"
+                    type="timestamp"/>
+			<key-property name="devId"
+                    column="devid"
+                    type="int" />
+		</composite-id>
+	
+		<property name="lat">
+			<column name="lat" sql-type="double" />
+		</property>
+		
+		<property name="lng">
+			<column name="lng" sql-type="double" />
+		</property>
+		
+		<property name="acc">
+			<column name="acc" sql-type="float" />
+		</property>
+		
+		<property name="speed">
+			<column name="speed" sql-type="gloat" />
+		</property>
+		
+		<property name="lTime">
+			<column name="ltime" sql-type="timestamp" />
+		</property>
+		
+	</class>
+</hibernate-mapping>

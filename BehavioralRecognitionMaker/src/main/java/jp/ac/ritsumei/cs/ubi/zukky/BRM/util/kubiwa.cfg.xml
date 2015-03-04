@@ -1,0 +1,30 @@
+<!DOCTYPE hibernate-configuration
+    PUBLIC "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+ 
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">
+			com.mysql.jdbc.Driver
+		</property>
+		
+		<property name="hibernate.connection.url">
+   			jdbc:mysql://exp-www.ubi.cs.ritsumei.ac.jp:3306/blackhole
+   			<!--  jdbc:mysql://localhost:3306/blackhole -->
+   		</property>
+   		<property name="hibernate.connection.username">kubiwauser</property>
+   		<property name="hibernate.connection.password">n0pr1vacy</property>
+    	
+    	<property name="hibernate.connection.pool_size">3</property>
+    	<property name="hibernate.dialect">
+      		org.hibernate.dialect.MySQLDialect
+      	</property>
+    	<property name="hibernate.show_sql">true</property>
+    	<!-- Mapping files -->
+    	<mapping resource="jp/ac/ritsumei/cs/ubi/zukky/BRM/util/KubiwaUser.hbm.xml"/>
+    	<mapping resource="jp/ac/ritsumei/cs/ubi/zukky/BRM/util/Device.hbm.xml"/>
+    	<mapping resource="jp/ac/ritsumei/cs/ubi/zukky/BRM/util/Gps.hbm.xml"/>
+    	
+  </session-factory>
+ 
+</hibernate-configuration>
